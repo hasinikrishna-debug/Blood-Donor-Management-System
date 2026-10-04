@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff7f7;
+    color: #222;
+}
+
+nav {
+    height: 70px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d62828;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #d62828;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 550px;
+    padding: 70px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.badge {
+    background: #ffe1e1;
+    color: #d62828;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin: 25px 0 20px;
+    line-height: 1.1;
+}
+
+.hero h1 span {
+    color: #d62828;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #666;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.primary {
+    background: #d62828;
+    color: white;
+}
+
+.primary:hover {
+    background: #b71c1c;
+}
+
+.secondary {
+    background: white;
+    color: #d62828;
+    border: 1px solid #d62828;
+}
+
+.blood-card {
+    width: 330px;
+    padding: 50px 30px;
+    background: white;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(214,40,40,0.12);
+}
+
+.blood-drop {
+    font-size: 90px;
+}
+
+.blood-card h2 {
+    margin: 15px 0;
+}
+
+.blood-card p {
+    color: #777;
+}
+
+/* STATS */
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    background: #d62828;
+    color: white;
+    padding: 35px;
+    text-align: center;
+}
+
+.stats h2 {
+    font-size: 30px;
+}
+
+.stats p {
+    margin-top: 5px;
+}
+
+/* FEATURES */
+
+.features {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.features > h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+.feature-card div {
+    font-size: 40px;
+}
+
+.feature-card h3 {
+    margin: 15px 0 10px;
+}
+
+.feature-card p {
+    color: #777;
+    line-height: 1.6;
+}
+
+/* FORM */
+
+.form-section {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.form-card {
+    background: white;
+    width: 500px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.form-card h1 {
+    margin-bottom: 10px;
+}
+
+.form-card > p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+form label {
+    display: block;
+    margin: 15px 0 7px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+form button {
+    width: 100%;
+    margin-top: 25px;
+}
+
+/* DONORS */
+
+.donors-section {
+    padding: 60px 8%;
+}
+
+.page-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.page-heading h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.page-heading p {
+    color: #777;
+}
+
+.search-box {
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.search-box select {
+    flex: 1;
+}
+
+.donor-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.donor-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+}
+
+.blood-group {
+    display: inline-block;
+    background: #ffe1e1;
+    color: #d62828;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.donor-card h3 {
+    margin-bottom: 10px;
+}
+
+.donor-card p {
+    margin: 7px 0;
+    color: #666;
+}
+
+.delete-btn {
+    margin-top: 15px;
+    padding: 9px 15px;
+    border: none;
+    border-radius: 6px;
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    nav {
+        padding: 0 5%;
+    }
+
+    .nav-links {
+        gap: 12px;
+        font-size: 13px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .stats {
+        gap: 35px;
+    }
+
+    .feature-grid,
+    .donor-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blood-card {
+        width: 100%;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+}

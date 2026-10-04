@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Donors | LifeFlow</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">🩸 LifeFlow</div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="register.html">Become a Donor</a>
+        <a href="donors.html">Find Donors</a>
+    </div>
+</nav>
+
+<section class="donors-section">
+
+    <div class="page-heading">
+        <h1>Find Blood Donors</h1>
+        <p>Search available donors by blood group.</p>
+    </div>
+
+    <div class="search-box">
+
+        <select id="searchBloodGroup">
+            <option value="">All Blood Groups</option>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+            <option>O+</option>
+            <option>O-</option>
+        </select>
+
+        <button onclick="searchDonors()" class="btn primary">
+            Search
+        </button>
+
+        <button onclick="loadDonors()" class="btn secondary">
+            Show All
+        </button>
+
+    </div>
+
+    <div id="donorList" class="donor-grid"></div>
+
+</section>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
